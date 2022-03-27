@@ -1,11 +1,3 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -29,9 +21,9 @@ int main()
         GridShow(grid1);
         GridNext(&grid1, grid2);
         GridCopy(&grid2, grid1);
-        GridShow(grid1);
         getchar();
     }
+
     return 0;
 }
 
@@ -73,11 +65,13 @@ int CellCheck(int** grid, int x, int y){
     int count = 0;
     for(int i = -1; i <= 1; i++){
         for(int j = -1; j <= 1; j++){
-            if(i!=0 && j!=0)
-            if((x+i>=0) && (x+i<GridSize)
-            && (y+j>=0) && (y+j<GridSize)){
-                count += grid[x+i][y+i];
+            if(i==0 && j==0){
             }
+            else
+                if((x+i>=0) && (x+i<GridSize) && (y+j>=0) && (y+j<GridSize)){
+                    count += grid[x+i][y+j];
+                }
+                
         }
     }
     return count;
@@ -98,7 +92,7 @@ void GridNext(int*** togrid, int** fromgrid){
                 else
                     temp[i][j] = 0;
             }
-            temp[i][j] = CellCheck(fromgrid, i, j);
+            //temp[i][j] = CellCheck(fromgrid, i, j);
         }
     }
 }
