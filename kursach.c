@@ -80,11 +80,11 @@ int GridSame(int** grid1, int** grid2);
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_USART2_UART_Init(void);
 static void MX_ADC_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM3_Init(void);
+static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 int GridSame(int** grid1, int** grid2){
@@ -132,12 +132,12 @@ void GridShow(int** grid){
         gx = 0;
         gy = 0;
     }
-    HAL_UART_Transmit(&huart2, (uint8_t*)"\n", strlen("\n"), 1000);
+    HAL_UART_Transmit(&huart2, (uint8_t*)"\n\r", strlen("\n\r"), 1000);
 }
 void GridToComport(int** grid){
 	char trans_str[64] = {0,};
 	for(int i = 0; i < GridSize; i++){
-	    snprintf(trans_str, 63, "%d %d %d %d %d %d %d %d\n", (uint16_t)grid[i][0], (uint16_t)grid[i][1], (uint16_t)grid[i][2], (uint16_t)grid[i][3], (uint16_t)grid[i][4], (uint16_t)grid[i][5], (uint16_t)grid[i][6], (uint16_t)grid[i][7]);
+	    snprintf(trans_str, 63, "%d %d %d %d %d %d %d %d\n\r", (uint16_t)grid[i][0], (uint16_t)grid[i][1], (uint16_t)grid[i][2], (uint16_t)grid[i][3], (uint16_t)grid[i][4], (uint16_t)grid[i][5], (uint16_t)grid[i][6], (uint16_t)grid[i][7]);
 	    HAL_UART_Transmit(&huart2, (uint8_t*)trans_str, strlen(trans_str), -1);
 	}
 	HAL_UART_Transmit(&huart2, (uint8_t*)"\n", strlen("\n"), 1000);
@@ -240,13 +240,13 @@ int calc_degree(uint8_t x, uint8_t dg)
 }
 
 
-void ADC_Select_CH0 (void)
+void ADC_Select_CH8 (void)
 {
 	ADC_ChannelConfTypeDef sConfig = {0};
 	  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
 	  */
-	ADC1->CHSELR = 1;
-	  sConfig.Channel = ADC_CHANNEL_0;
+	ADC1->CHSELR = 9;
+	  sConfig.Channel = ADC_CHANNEL_8;
 	  sConfig.Rank = 1;
 	  //sConfig.SamplingTime = ADC_SAMPLETIME_160CYCLES_5;
 	  if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
@@ -255,13 +255,13 @@ void ADC_Select_CH0 (void)
 	  }
 }
 
-void ADC_Select_CH1 (void)
+void ADC_Select_CH9 (void)
 {
 	ADC_ChannelConfTypeDef sConfig = {0};
 	  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
 	  */
-	ADC1->CHSELR = 2;
-	  sConfig.Channel = ADC_CHANNEL_1;
+	ADC1->CHSELR = 10;
+	  sConfig.Channel = ADC_CHANNEL_9;
 	  sConfig.Rank = 2;
 	  //sConfig.SamplingTime = ADC_SAMPLETIME_84CYCLES;
 	  if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
@@ -342,11 +342,11 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART2_UART_Init();
   MX_ADC_Init();
   MX_SPI1_Init();
   MX_TIM1_Init();
   MX_TIM3_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
   Spi1_init();
   HAL_Delay(100);
@@ -375,7 +375,8 @@ int main(void)
   uint8_t vy = 0;
   uint8_t timer = 0;
   uint8_t mod_change = 0;
-
+  int AD_RES0 = 0;
+  int AD_RES1 = 0;
   HAL_TIM_Base_Start_IT(&htim1);
   HAL_TIM_Base_Start_IT(&htim3);
   /* USER CODE END 2 */
@@ -387,6 +388,8 @@ int main(void)
   {
 
 	  if (tim2 == 1){
+		  sprintf(str, "x=%d y=%d\n\r\0",AD_RES0, AD_RES1);
+		  HAL_UART_Transmit(&huart2, str, strlen(str), 10);
 		  GridToComport(grid1);
 
 		  if(timer == 0 && tim1 == 1){
@@ -397,6 +400,7 @@ int main(void)
 		  		  }
 		  		  GridCopy(&grid2, grid1);
 		  		  GridShow(grid1);
+		  		  GridToComport(grid1);
 		  }
 		  else if(timer > 0 && tim2 == 1){
 			  if(tim1 == 1){
@@ -421,17 +425,16 @@ int main(void)
 	  }
 
 
-	  int AD_RES0 = 0;
-	  int AD_RES1 = 0;
 
-	  ADC_Select_CH0();
+
+	  ADC_Select_CH8();
 	  HAL_ADC_Start(&hadc);
 	  HAL_ADC_PollForConversion(&hadc, 1000);
 	  AD_RES0 = HAL_ADC_GetValue(&hadc);
 	  HAL_ADC_Stop(&hadc);
 	  //HAL_Delay(10);
 
-	  ADC_Select_CH1();
+	  ADC_Select_CH9();
 	  HAL_ADC_Start(&hadc);
   	  HAL_ADC_PollForConversion(&hadc, 1000);
   	  AD_RES1 = HAL_ADC_GetValue(&hadc);
@@ -440,16 +443,16 @@ int main(void)
 
 
 
-  	  if(AD_RES0 < 500)
+  	  if(AD_RES0 < 700)
   		  vx = -1;
-  	  else if(AD_RES0 > 3500)
+  	  else if(AD_RES0 > 3300)
   		  vx = 1;
   	  else
   		  vx = 0;
 
-  	  if(AD_RES1 < 500)
+  	  if(AD_RES1 < 700)
   		  vy = -1;
-  	  else if(AD_RES1 > 3500)
+  	  else if(AD_RES1 > 3300)
   	  	  vy = 1;
   	  else
   	  	  vy = 0;
@@ -458,8 +461,10 @@ int main(void)
   		  timer = 10;
   	  }
 
-  	  if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_8) == GPIO_PIN_RESET){
+  	  if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_2) == GPIO_PIN_RESET){
   		  mod_change = 1;
+  		  HAL_UART_Transmit(&huart2, "touch_me /r/n/0", strlen("touch_me /r/n/0"), 10);
+  		  HAL_Delay(10);
   	  }
 
     /* USER CODE END WHILE */
@@ -536,7 +541,7 @@ static void MX_ADC_Init(void)
   hadc.Init.DiscontinuousConvMode = DISABLE;
   hadc.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
-  hadc.Init.DMAContinuousRequests = ENABLE;
+  hadc.Init.DMAContinuousRequests = DISABLE;
   hadc.Init.Overrun = ADC_OVR_DATA_PRESERVED;
   if (HAL_ADC_Init(&hadc) != HAL_OK)
   {
@@ -544,16 +549,16 @@ static void MX_ADC_Init(void)
   }
   /** Configure for the selected ADC regular channel to be converted.
   */
-  sConfig.Channel = ADC_CHANNEL_0;
+  sConfig.Channel = ADC_CHANNEL_8;
   sConfig.Rank = ADC_RANK_CHANNEL_NUMBER;
-  sConfig.SamplingTime = ADC_SAMPLETIME_13CYCLES_5;
+  sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
   if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
   {
     Error_Handler();
   }
   /** Configure for the selected ADC regular channel to be converted.
   */
-  sConfig.Channel = ADC_CHANNEL_1;
+  sConfig.Channel = ADC_CHANNEL_9;
   if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -671,7 +676,7 @@ static void MX_TIM3_Init(void)
   htim3.Instance = TIM3;
   htim3.Init.Prescaler = 79;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 24999;
+  htim3.Init.Period = 12499;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -743,21 +748,11 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin : CS_Pin */
-  GPIO_InitStruct.Pin = CS_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(CS_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PB8 */
-  GPIO_InitStruct.Pin = GPIO_PIN_8;
+  /*Configure GPIO pin : SW_Pin */
+  GPIO_InitStruct.Pin = SW_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+  HAL_GPIO_Init(SW_GPIO_Port, &GPIO_InitStruct);
 
 }
 
