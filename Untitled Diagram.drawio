@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-17T10:42:52.013Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.160 YaBrowser/22.5.2.615 Yowser/2.5 Safari/537.36" etag="Sja_nCXRAiONZo0SlBvj" version="15.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-17T10:56:14.462Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.160 YaBrowser/22.5.2.615 Yowser/2.5 Safari/537.36" etag="y1DIrKGiiUzoo5OXIzZU" version="15.5.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="4406" dy="2303" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="815" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -8,49 +8,49 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-1" value="Вывести состояние матрицы на компьютер через UART" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="910" y="650" width="240" height="60" as="geometry" />
+          <mxGeometry x="610" y="400" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-4" target="nwCR8Wp00dpBARo_HuRd-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-4" value="Таймер 2 сработал?" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="927.5" y="490" width="205" height="123" as="geometry" />
+          <mxGeometry x="627.5" y="240" width="205" height="123" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-6" target="nwCR8Wp00dpBARo_HuRd-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-6" value="Начало" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;arcSize=50;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="940" y="280" width="180" height="30" as="geometry" />
+          <mxGeometry x="640" y="30" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="nwCR8Wp00dpBARo_HuRd-7" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=GOST;fontSource=https%3A%2F%2Ffontlibrary.org%2Fru%2Ffont%2Fgostrus-type-a;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1300" y="600" width="60" height="30" as="geometry" />
+        <mxCell id="nwCR8Wp00dpBARo_HuRd-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-9" target="nwCR8Wp00dpBARo_HuRd-11">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-9" value="Инициализация устройства" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="935" y="340" width="190" height="40" as="geometry" />
+          <mxGeometry x="635" y="90" width="190" height="40" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-11" target="nwCR8Wp00dpBARo_HuRd-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-11" value="Начало цикла А:" style="shape=loopLimit;whiteSpace=wrap;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="925" y="410" width="210" height="50" as="geometry" />
+          <mxGeometry x="625" y="160" width="210" height="50" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-12" target="nwCR8Wp00dpBARo_HuRd-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-12" value="Таймер 1 сработал?" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="927.5" y="730" width="205" height="123" as="geometry" />
+          <mxGeometry x="627.5" y="480" width="205" height="123" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-13" target="nwCR8Wp00dpBARo_HuRd-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-13" value="Обновить состояние матрицы" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="580" y="1050" width="240" height="60" as="geometry" />
+          <mxGeometry x="280" y="800" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;exitX=0.012;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-14" target="nwCR8Wp00dpBARo_HuRd-15">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="578" y="1212" />
-              <mxPoint x="510" y="1212" />
+              <mxPoint x="278" y="962" />
+              <mxPoint x="210" y="962" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -58,78 +58,120 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-14" value="Матрица 1 и матрица &lt;br&gt;2 совпадают?" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="597.5" y="1150" width="205" height="123" as="geometry" />
+          <mxGeometry x="297.5" y="900" width="205" height="123" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-15">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="700" y="1320" as="targetPoint" />
+            <mxPoint x="400" y="1070" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-15" value="Инициализация матрицы 1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="390" y="1290" width="240" height="60" as="geometry" />
+          <mxGeometry x="90" y="1040" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-16" target="nwCR8Wp00dpBARo_HuRd-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="nwCR8Wp00dpBARo_HuRd-16" value="Скопировать матрицу 1 в матрицу 2" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="580" y="1448.5" width="240" height="60" as="geometry" />
+        <mxCell id="nwCR8Wp00dpBARo_HuRd-16" value="Скопировать матрицу 1 &lt;br&gt;в матрицу 2" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="280" y="1198.5" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nwCR8Wp00dpBARo_HuRd-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="1390" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-17" value="Отобразить матрицу 1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="580" y="1550" width="240" height="60" as="geometry" />
+          <mxGeometry x="280" y="1300" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;entryX=0.497;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.992;exitY=0.498;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-20" target="nwCR8Wp00dpBARo_HuRd-21">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1200" y="941.5" as="targetPoint" />
+            <mxPoint x="900" y="691.5" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1211" y="941" />
+              <mxPoint x="911" y="691" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-20" target="nwCR8Wp00dpBARo_HuRd-13">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="860" y="1050" as="targetPoint" />
+            <mxPoint x="560" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-20" value="Таймер равен 0?" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="927.5" y="880" width="205" height="123" as="geometry" />
+          <mxGeometry x="627.5" y="630" width="205" height="123" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-21" target="nwCR8Wp00dpBARo_HuRd-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-21" value="Счетчик больше 0?" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1108.75" y="989.25" width="205" height="123" as="geometry" />
+          <mxGeometry x="808.75" y="739.25" width="205" height="123" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-22" target="nwCR8Wp00dpBARo_HuRd-31">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="Изменить позицию курсора" treeRoot="1" id="nwCR8Wp00dpBARo_HuRd-22">
           <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-            <mxGeometry x="1112.5" y="1280" width="197.5" height="60" as="geometry" />
+            <mxGeometry x="812.5" y="1030" width="197.5" height="60" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-28" target="nwCR8Wp00dpBARo_HuRd-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-28" value="Таймер 1 сработал?" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1108.75" y="1130" width="205" height="123" as="geometry" />
+          <mxGeometry x="808.75" y="880" width="205" height="123" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-31" target="nwCR8Wp00dpBARo_HuRd-33">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-31" value="Кнопка нажата?" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1108.75" y="1370" width="205" height="123" as="geometry" />
+          <mxGeometry x="808.75" y="1120" width="205" height="123" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-33" target="nwCR8Wp00dpBARo_HuRd-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nwCR8Wp00dpBARo_HuRd-33" value="Отобразить позицию курсора" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Tahoma;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1091.25" y="1520" width="240" height="60" as="geometry" />
+          <mxGeometry x="791.25" y="1270" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nwCR8Wp00dpBARo_HuRd-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-35" target="nwCR8Wp00dpBARo_HuRd-45">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="Декрементировать таймер" treeRoot="1" id="nwCR8Wp00dpBARo_HuRd-35">
           <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-            <mxGeometry x="1112.5" y="1610" width="197.5" height="60" as="geometry" />
+            <mxGeometry x="812.5" y="1360" width="197.5" height="60" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="nwCR8Wp00dpBARo_HuRd-45" value="1" style="ellipse;whiteSpace=wrap;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="650" y="1520" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nwCR8Wp00dpBARo_HuRd-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-48" target="nwCR8Wp00dpBARo_HuRd-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nwCR8Wp00dpBARo_HuRd-48" value="1" style="ellipse;whiteSpace=wrap;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1030" y="30" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nwCR8Wp00dpBARo_HuRd-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-49" target="nwCR8Wp00dpBARo_HuRd-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Чтение каналов АЦП" treeRoot="1" id="nwCR8Wp00dpBARo_HuRd-49">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+            <mxGeometry x="946.25" y="100" width="197.5" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="nwCR8Wp00dpBARo_HuRd-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nwCR8Wp00dpBARo_HuRd-52" target="nwCR8Wp00dpBARo_HuRd-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Обработка данных с АЦП" treeRoot="1" id="nwCR8Wp00dpBARo_HuRd-52">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+            <mxGeometry x="946.25" y="180" width="197.5" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="nwCR8Wp00dpBARo_HuRd-55" value="" style="shape=loopLimit;whiteSpace=wrap;html=1;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;rotation=-180;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="940" y="280" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nwCR8Wp00dpBARo_HuRd-59" value="Конец цикла А" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="985" y="290" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nwCR8Wp00dpBARo_HuRd-60" value="Инициализация устройства" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=GOST_type_B;fontSource=http%3A%2F%2Fru.legionfonts.com%2Fdownload%2Fgost-2-304-81-type-b-italic;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1260" y="20" width="210" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
